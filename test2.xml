@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Body>
+    <FindObjects xmlns="http://tempuri.org/">
+      <ListID>1149</ListID>
+      <Query>ID=15</Query>
+    <FieldNames>
+      <string>Предполагаемый порядок расчета[id списка]</string>
+      </FieldNames>
+    </FindObjects>
+  </soap12:Body>
+</soap12:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <FindObjectsResponse xmlns="http://tempuri.org/">
+            <FindObjectsResult>
+                <OperationResult>true</OperationResult>
+                <Items>
+                    <ListItem>
+                        <ItemID>15</ItemID>
+                        <ListID>1149</ListID>
+                        <Fields>
+                            <ItemField xsi:type="ItemLookupField">
+                                <FieldName>Предполагаемый порядок расчета</FieldName>
+                            </ItemField>
+                        </Fields>
+                    </ListItem>
+                </Items>
+            </FindObjectsResult>
+        </FindObjectsResponse>
+    </soap:Body>
+</soap:Envelope>
